@@ -40,8 +40,8 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
-    #nodePort: 30030
-  type: ClusterIP
+    nodePort: 30030
+  type: NodePort
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
